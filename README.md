@@ -1,4 +1,4 @@
-# README
+# RAILS SHIPPING PROJECT NYCDA
 
 ```
 rails g scaffold User fullname:string username:string image:string
