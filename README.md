@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+rails g scaffold User fullname:string username:string image:string
+rails g scaffold Boat name:string storage:integer location:string user:references
+rails g scaffold Job description:string origin:string destination:string cost:integer containers:integer
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
