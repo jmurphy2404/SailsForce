@@ -36,3 +36,14 @@ edit_user GET    /users/:id/edit(.:format) users#edit
           PUT    /users/:id(.:format)      users#update
           DELETE /users/:id(.:format)      users#destroy
 ```
+
+```
+https://coolors.co/app/0d0630-18314f-384e77-8bbeb2-e6f9af
+
+Hex     | Use
+#0D0630 | 
+#18314F | 
+#384E77 | 
+#8BBEB2 |
+#E6F9AF | 
+```
