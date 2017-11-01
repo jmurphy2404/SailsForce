@@ -7,7 +7,10 @@ $ventana: #003F5F;
 $sombra: #CCCDD1;
 $blanco: white;
 
-* {
+
+
+
+#home-background * {
 	margin: 0 auto;
 	padding: 0;
 	border: 0;
@@ -72,7 +75,7 @@ $blanco: white;
 	width: 400px;
 	height: 160px;
 	position: relative;
-	overflow: hidden;	
+	overflow: hidden;
 	animation-name: barco;
 	animation-iteration-count: infinite;
 	animation-duration: 5s;
@@ -394,7 +397,7 @@ $blanco: white;
 	display: flex;
 	align-items: center;
 	position: relative;
-	overflow: hidden;	
+	overflow: hidden;
 	justify-content: center;
 	background-color: #C0EBFF;
 	.agua{

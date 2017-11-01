@@ -9,6 +9,8 @@
   </head>
 
   <body>
+    <%= flash[:alert] %>
+    <%= render partial: "home/navbar" %>
     <%= yield %>
   </body>
 </html>
