@@ -64,9 +64,9 @@ cancel_user_registration GET    /users/cancel(.:format)        devise/registrati
 https://coolors.co/app/0d0630-18314f-384e77-8bbeb2-e6f9af
 
 Hex     | Use
-#0D0630 | 
+#0D0630 | Outline
 #18314F | 
-#384E77 | 
+#384E77 | Background
 #8BBEB2 |
-#E6F9AF | 
+#E6F9AF | Text
 ```
