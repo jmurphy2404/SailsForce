@@ -1,5 +1,6 @@
-# RAILS SHIPPING PROJECT NYCDA
+## RAILS SHIPPING PROJECT NYCDA
 
+# Startup Commands
 ```
 rails g scaffold User fullname:string username:string image:string
 rails g scaffold Boat name:string storage:integer location:string user:references
@@ -8,8 +9,10 @@ rails g model BoatJob job:references boat:references
 rails g devise:install
 rails g devise User
 rails g devise:views
+rails g controller home index
 ```
 
+# Routes
 ```
    Prefix Verb   URI Pattern               Controller#Action
      jobs GET    /jobs(.:format)           jobs#index
@@ -38,6 +41,7 @@ edit_user GET    /users/:id/edit(.:format) users#edit
           DELETE /users/:id(.:format)      users#destroy
 ```
 
+# Palate
 ```
 https://coolors.co/app/0d0630-18314f-384e77-8bbeb2-e6f9af
 
