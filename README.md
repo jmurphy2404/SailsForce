@@ -7,6 +7,7 @@ rails g scaffold Job description:string origin:string destination:string cost:in
 rails g model BoatJob job:references boat:references
 rails g devise:install
 rails g devise User
+rails g devise:views
 ```
 
 ```
