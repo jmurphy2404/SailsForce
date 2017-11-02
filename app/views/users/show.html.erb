@@ -1,19 +1,29 @@
 <p id="notice"><%= notice %></p>
+<div class="user_table">
 
-<p>
-  <strong>Fullname:</strong>
-  <%= @user.fullname %>
-</p>
+  <p>
+    <div class="users-profile-2"><%= image_tag(@user.image) if @user.image? %></div>
+  </p>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+  <h1>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag(@user.image) if @user.image? %>
-</p>
+    <%= @user.fullname %>
+  </h1>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <h2>
+
+    <%= @user.username %>
+  </h2>
+
+  <h3>
+
+    <%= @user.email %>
+  </h3>
+
+
+
+
+
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div>
