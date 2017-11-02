@@ -16,6 +16,7 @@ $blanco: white;
 	border: 0;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
+
 }
 @keyframes radar{
 	0%{
@@ -70,6 +71,7 @@ $blanco: white;
 	width: 100%;
 	height: 100vh;
 	margin: 0 auto;
+
 }
 .barco{
 	width: 400px;
@@ -400,6 +402,7 @@ $blanco: white;
 	overflow: hidden;
 	justify-content: center;
 	background-color: #C0EBFF;
+	margin-top: 30px;
 	.agua{
 		background-color: #25b9ee;
 		width: 100%;
@@ -427,17 +430,57 @@ $blanco: white;
 
 }
 
+
+
 #home-title{
 	margin: 0 auto;
 	text-align: center;
 	display: block;
 	padding-bottom: 10px;
-	padding-top: 10px;
-	color: #E6F9AF;
-	background-color: #384E77;
+	// color: #E6F9AF;
+	color: orange;
+	float: left;
+	padding-left: 30px;
+	font-family: monospace;
+	padding-top: 20px;
 }
 
 #home-background{
 	background-color: #384E77;
-	height: 600px;
+	height: auto;
+  padding-top: 70px;
+
+}
+
+.nav_bar_main {
+	background-color: #18314F ;
+	width: 100%;
+	height: 60px;
+}
+
+.nav_bar_main li {
+	list-style: none;
+	display: inline-flex;
+	padding: 20px 20px;
+	float: right;
+
+}
+
+.nav_bar_main li a{
+	color: #E6F9AF;
+	font-style: bold;
+	color: #E6F9AF;
+	text-decoration: none;
+	font-family: monospace;
+}
+
+.boats_table {
+	padding-left: 30px;
+}
+.boats_table a{
+	color: orange;
+}
+
+.user_table {
+	padding-left: 30px;
 }

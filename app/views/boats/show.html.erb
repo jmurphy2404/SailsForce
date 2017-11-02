@@ -1,24 +1,26 @@
 <p id="notice"><%= notice %></p>
+<div class="boats_table">
 
-<p>
-  <strong>Name:</strong>
-  <%= @boat.name %>
-</p>
+  <p>
+    <strong>Name:</strong>
+    <%= @boat.name %>
+  </p>
 
-<p>
-  <strong>Storage:</strong>
-  <%= @boat.storage %>
-</p>
+  <p>
+    <strong>Storage:</strong>
+    <%= @boat.storage %>
+  </p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @boat.location %>
-</p>
+  <p>
+    <strong>Location:</strong>
+    <%= @boat.location %>
+  </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @boat.user.fullname %>
-</p>
+  <p>
+    <strong>User:</strong>
+    <%= @boat.user.fullname %>
+  </p>
 
-<%= link_to 'Edit', edit_boat_path(@boat) %> |
-<%= link_to 'Back', boats_path %>
+  <%= link_to 'Edit', edit_boat_path(@boat) %> |
+  <%= link_to 'Back', boats_path %>
+</div>
