@@ -21,6 +21,9 @@ class BoatsController < ApplicationController
   def edit
   end
 
+  
+
+
   # POST /boats
   # POST /boats.json
   def create
