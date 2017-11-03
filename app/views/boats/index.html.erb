@@ -9,14 +9,14 @@
               <th>Storage</th>
               <th>Location</th>
               <th>Jobs</th>
-              <th colspan="4"></th>
+              <th colspan="5"></th>
             </tr>
           </thead>
         <% current_user.boats.each do |boat| %>
           <tbody>
           <td><%= boat.name %></td>
           <td><%= boat.storage %></td>
-          <td><%= boat.location %></td>
+          <td><%= boat.location %></td> 
           <% jobs_array = Job.all.map {|job| [job.description, job.id]} %>
           <%= form_for boat, method: :patch, remote: true, class: "assign" do |f| %>
           <td><%= select_tag(:job_id, options_for_select(jobs_array)) %></td>
