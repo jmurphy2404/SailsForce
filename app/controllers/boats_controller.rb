@@ -41,9 +41,10 @@ class BoatsController < ApplicationController
   # PATCH/PUT /boats/1.json
   def update
     respond_to do |format|
-      if @boat.update(boat_params)
+      boat_job = BoatJob.new(boat_id: @boat.id, job_id: params[:job_id])
+      if boat_job.save
         format.html { redirect_to @boat, notice: 'Boat was successfully updated.' }
-        format.json { render :show, status: :ok, location: @boat }
+        format.json { render :index, status: :ok, location: @boat }
       else
         format.html { render :edit }
         format.json { render json: @boat.errors, status: :unprocessable_entity }

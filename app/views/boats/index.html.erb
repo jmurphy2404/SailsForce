@@ -18,8 +18,12 @@
           <td><%= boat.storage %></td>
           <td><%= boat.location %></td>
           <% jobs_array = Job.all.map {|job| [job.description, job.id]} %>
+          <%= form_for boat, method: :patch, remote: true, class: "assign" do |f| %>
           <td><%= select_tag(:job_id, options_for_select(jobs_array)) %></td>
-          <td><%= link_to "Assign", @boat, method: :patch, remote:true, class: "assign" %></td>
+          <td>
+              <%= f.submit %>
+            <% end %>
+          </td>
           <td><%= link_to 'Show', boat %></td>
           <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
           <td><%= link_to 'Destroy', boat, method: :delete, data: { confirm: 'Are you sure?' } %></td>
