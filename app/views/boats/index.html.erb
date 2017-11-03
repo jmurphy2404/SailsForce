@@ -9,7 +9,7 @@
               <th>Storage</th>
               <th>Location</th>
               <th>Jobs</th>
-              <th colspan="4"></th>
+              <th colspan="5"></th>
             </tr>
           </thead>
         <% current_user.boats.each do |boat| %>
@@ -17,8 +17,11 @@
           <td><%= boat.name %></td>
           <td><%= boat.storage %></td>
           <td><%= boat.location %></td>
-          <% jobs_array = Job.all.map {|job| [job.description, job.id]} %>
-          <td><%= select_tag(:job_id, options_for_select(jobs_array)) %></td>
+          <form id="boatjob-form">
+            <% jobs_array = Job.all.map {|job| [job.description, job.id]} %>
+            <td><%= select_tag(:job_id, options_for_select(jobs_array)) %></td>
+            <td><%= submit_tag("Assign"), remote: true %></td>
+          </form>
           <td><%= link_to "Assign", @boat, method: :patch, remote:true, class: "assign" %></td>
           <td><%= link_to 'Show', boat %></td>
           <td><%= link_to 'Edit', edit_boat_path(boat) %></td>
