@@ -25,7 +25,7 @@ class BoatsController < ApplicationController
   # POST /boats.json
   def create
     @boat = Boat.new(boat_params)
-
+      
     respond_to do |format|
       if @boat.save
         format.html { redirect_to @boat, notice: 'Boat was successfully created.' }
