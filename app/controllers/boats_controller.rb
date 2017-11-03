@@ -20,7 +20,7 @@ class BoatsController < ApplicationController
   # GET /boats/1/edit
   def edit
   end
-
+  
   # POST /boats
   # POST /boats.json
   def create
