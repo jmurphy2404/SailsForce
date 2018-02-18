@@ -18,7 +18,7 @@
           <td><%= boat.storage %></td>
           <td><%= boat.location %></td> 
           <% jobs_array = Job.all.map {|job| [job.description, job.id]} %>
-          <%= form_for boat, method: :patch, remote: true, class: "assign" do |f| %>
+          <%= form_for boat, method: :patch, class: "assign" do |f| %>
           <td><%= select_tag(:job_id, options_for_select(jobs_array)) %></td>
           <td>
               <%= f.submit %>
