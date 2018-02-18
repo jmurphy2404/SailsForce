@@ -1,4 +1,18 @@
-# RAILS SHIPPING PROJECT NYCDA
+# RAILS BUSINESS SOFTWARE SHIPPING PROJECT NYCDA
+
+## Purpose of Project
+```
+Create a business product to help shipping companies track their jobs, track their fleet, and assign jobs to ships to manage logistics.
+```
+
+## Dummy Login Info
+```
+email: "mikey@gmail.com", password: "password"
+clone repo and cd into the project folder
+run a "gem install" to install dependencies
+run "rails s" to start the server, navigate
+go to localhost:3000 in your browser to see the site, using the login information above
+```
 
 ## Startup Commands
 ```
@@ -70,3 +84,5 @@ Hex     | Use
 #8BBEB2 |
 #E6F9AF | Text
 ```
+
+### Special thanks to codepen for the animation!
