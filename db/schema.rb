@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 20171031174632) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "boat_jobs", force: :cascade do |t|
-    t.integer "job_id"
-    t.integer "boat_id"
+    t.bigint "job_id"
+    t.bigint "boat_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["boat_id"], name: "index_boat_jobs_on_boat_id"
@@ -25,7 +28,7 @@ ActiveRecord::Schema.define(version: 20171031174632) do
     t.string "name"
     t.integer "storage"
     t.string "location"
-    t.integer "user_id"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_boats_on_user_id"
@@ -61,4 +64,7 @@ ActiveRecord::Schema.define(version: 20171031174632) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "boat_jobs", "boats"
+  add_foreign_key "boat_jobs", "jobs"
+  add_foreign_key "boats", "users"
 end
